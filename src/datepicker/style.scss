@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Almoni';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/almoni-dl-aaa-400.eot');
+  src: local('Almoni'),
+    url('../fonts/almoni-dl-aaa-400.eot#iefix') format('embedded-opentype'),
+    url('../fonts/almoni-dl-aaa-400.woff') format('woff'),
+    url('../fonts/almoni-dl-aaa-400.ttf') format('truetype');
+}
+.datepicker-wrap {
+  position: relative;
+  .datepicker-input {
+    width: 300px;
+  }
+}

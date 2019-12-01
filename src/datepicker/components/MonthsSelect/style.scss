@@ -1,0 +1,70 @@
+.months-select {
+  position: relative;
+  width: 176px;
+  height: 31px;
+  font-size: 15px;
+  color: #9e9e9e;
+  border-bottom: 1px solid #f0f0f0;
+  border-radius: 2px;
+
+  &.open {
+    background-color: #fafafa;
+    border-bottom: 1px solid #d1d1d1;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .months-select-input {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px 0 10px;
+    cursor: pointer;
+
+    .arrow-up {
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 4px solid #555;
+    }
+
+    .arrow-down {
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-bottom: 4px solid #555;
+    }
+  }
+  .months-options {
+    width: 176px;
+    height: 300px;
+    background: #fafafa;
+    margin-top: 1px;
+    overflow: scroll;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.12);
+
+    &.open {
+      opacity: 1;
+      visibility: visible;
+    }
+    .month-option {
+      display: flex;
+      height: 27px;
+      padding: 0 8px 0 10px;
+      align-items: center;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+
+      &:hover {
+        background-color: #e9f2f2;
+        color: #258781;
+      }
+    }
+  }
+}

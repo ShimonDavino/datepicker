@@ -1,0 +1,53 @@
+.datepicker {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  direction: rtl;
+  font-family: 'Almoni';
+  margin: 12px;
+  width: 280px;
+  box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.19), 0 0 6px 0 rgba(0, 0, 0, 0.26);
+  color: #636365;
+  padding: 42px 32px 16px 32px;
+  z-index: 1000;
+  background: white;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  .close-button {
+    position: absolute;
+    top: 26px;
+    left: 28px;
+    width: 14px;
+    height: 14px;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: ' ';
+      height: 14px;
+      width: 2px;
+      background-color: #b2b3b3;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}

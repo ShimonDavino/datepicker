@@ -1,0 +1,27 @@
+.footer {
+  margin-top: 34px;
+  .row {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+
+    .small_circle {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: #d8eaea;
+      margin-left: 12px;
+      display: inline-block;
+    }
+    .circle-green {
+      background-color: #d8eaea;
+    }
+    .circle-red {
+      background-color: #ffe9f1;
+    }
+  }
+  .row:first-child {
+    margin-bottom: 5px;
+  }
+}
